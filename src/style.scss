@@ -2,7 +2,9 @@
 
 $primary-font-color: #444;
 $primary-bg-color: #FBB03B;
-$primary-btn: #536dfe;
+$btn-color: #39B69F;
+$hamburger-color: #138073;
+$text-color: #138073;
 $header-font: "Merriweather", sans-serif;
 $text-font: "Lora", sans-serif;
 $normal-font-size: 1.5rem;
@@ -17,7 +19,18 @@ $normal-font-size: 1.5rem;
 body {
     font-family: $text-font;
     color: $primary-font-color;
-    background: $primary-bg-color;
-    display: flex;
-    justify-content: center;
+    background: black;
+    padding: 0px 20px;
+        .main{
+            background: $primary-bg-color;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h1{
+                color: $text-color;
+            }
+        }
 }
+
