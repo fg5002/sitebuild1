@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+/*$text-color: #138073;*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,9 +19,18 @@ body .main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
 }
 body .main h1 {
-  color: #138073;
+  color: red;
+}
+body .main input {
+  padding: 5px 10px;
+  color: red;
+}
+body .main ::placeholder {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

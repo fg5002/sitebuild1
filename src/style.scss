@@ -4,7 +4,8 @@ $primary-font-color: #444;
 $primary-bg-color: #FBB03B;
 $btn-color: #39B69F;
 $hamburger-color: #138073;
-$text-color: #138073;
+/*$text-color: #138073;*/
+$text-color: red;
 $header-font: "Merriweather", sans-serif;
 $text-font: "Lora", sans-serif;
 $normal-font-size: 1.5rem;
@@ -28,7 +29,17 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            gap: 10px;
+            font-size: 2rem;
             h1{
+                color: $text-color;
+            }
+            input{
+                padding: 5px 10px;
+                color: $text-color;
+                
+            }
+            ::placeholder {
                 color: $text-color;
             }
         }
