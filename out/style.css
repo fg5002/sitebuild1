@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", sans-serif;
+  color: #444;
+  background: #FBB03B;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

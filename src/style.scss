@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+$primary-font-color: #444;
+$primary-bg-color: #FBB03B;
+$primary-btn: #536dfe;
+$header-font: "Merriweather", sans-serif;
+$text-font: "Lora", sans-serif;
+$normal-font-size: 1.5rem;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $text-font;
+    color: $primary-font-color;
+    background: $primary-bg-color;
+    display: flex;
+    justify-content: center;
+}
