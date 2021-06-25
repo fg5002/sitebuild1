@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jun 25 2021 18:25:49 GMT+0200 (közép-európai nyári idő)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-25-5-2021-18-5-34.txt
+* Dockerfile
+
+
+Deleted files:
+
+
+Renamed files:
