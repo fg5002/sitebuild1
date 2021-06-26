@@ -29,7 +29,7 @@ body .hamcontainer .hamburger {
   gap: 6px;
 }
 body .hamcontainer .hamburger div {
-  width: 42px;
+  width: 40px;
   height: 6px;
   background: #fff;
 }
@@ -64,12 +64,21 @@ body .main .checkcontainer {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #138073;
-  font-size: 600;
+  font-size: 700;
 }
 body .main .checkcontainer input[type=checkbox] {
   width: 25px;
+}
+body .main input[type=button] {
+  width: 284px;
+  height: 74px;
+  background-color: #39B69F;
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 body .main ::placeholder {
   color: #39B69F;
