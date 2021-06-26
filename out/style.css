@@ -72,6 +72,7 @@ body .main .checkcontainer input[type=checkbox] {
   width: 25px;
 }
 body .main input[type=button] {
+  align-self: center;
   width: 284px;
   height: 74px;
   background-color: #39B69F;
