@@ -69,8 +69,16 @@ body {
                 width: 560px;
                 height: 65px;                
             }
-            input[type="checkbox"]{
-                width: 25px;
+            .checkcontainer{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 16px;
+                color: $text-color;
+                font-size: 600;
+                input[type="checkbox"]{
+                    width: 25px;
+                }
             }
             ::placeholder {
                 color: $btn-color;

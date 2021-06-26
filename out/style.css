@@ -60,7 +60,15 @@ body .main input {
   width: 560px;
   height: 65px;
 }
-body .main input[type=checkbox] {
+body .main .checkcontainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  color: #138073;
+  font-size: 600;
+}
+body .main .checkcontainer input[type=checkbox] {
   width: 25px;
 }
 body .main ::placeholder {
