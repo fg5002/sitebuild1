@@ -21,7 +21,11 @@ body {
     color: $primary-font-color;
     background: black;
     padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .hamcontainer{
+        align-self: stretch;
         display: flex;
         justify-content: flex-end;
         background: $primary-bg-color;
@@ -46,28 +50,24 @@ body {
         .main{
             background: $primary-bg-color;
             height: 100vh;
+            min-width: 416px;
+            max-width: 580px;
             display: flex;
-            /*justify-content: center;*/
             align-items: center;
             flex-direction: column;
             gap: 30px;
             font-size: 2rem;
-
-            @media (max-width: 500px) {
-                /*flex-direction: column; max width 417px 353*/
-                align-items: center;
-            }
-
+            padding:20px;
             h1{
                 color: $text-color;
                 font-size: 1.7rem;;
             }
             input{
+                align-self: stretch;
                 font-size: 16px;
                 padding: 10px 20px;
                 color: $text-color;
-                width: 560px;
-                height: 65px;                
+                height: 65px;            
             }
             .checkcontainer{
                 display: flex;
@@ -92,6 +92,11 @@ body {
             ::placeholder {
                 color: $btn-color;
                 font-weight: 500;
+            }
+        }
+        @media (max-width: 400px) {
+            .hamburger{
+                transform: scale(0.8)
             }
         }
 }

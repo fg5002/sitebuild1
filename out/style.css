@@ -10,8 +10,12 @@ body {
   color: #444;
   background: black;
   padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .hamcontainer {
+  align-self: stretch;
   display: flex;
   justify-content: flex-end;
   background: #FBB03B;
@@ -36,28 +40,24 @@ body .hamcontainer .hamburger div {
 body .main {
   background: #FBB03B;
   height: 100vh;
+  min-width: 416px;
+  max-width: 580px;
   display: flex;
-  /*justify-content: center;*/
   align-items: center;
   flex-direction: column;
   gap: 30px;
   font-size: 2rem;
-}
-@media (max-width: 500px) {
-  body .main {
-    /*flex-direction: column; max width 417px 353*/
-    align-items: center;
-  }
+  padding: 20px;
 }
 body .main h1 {
   color: #138073;
   font-size: 1.7rem;
 }
 body .main input {
+  align-self: stretch;
   font-size: 16px;
   padding: 10px 20px;
   color: #138073;
-  width: 560px;
   height: 65px;
 }
 body .main .checkcontainer {
@@ -83,6 +83,11 @@ body .main input[type=button] {
 body .main ::placeholder {
   color: #39B69F;
   font-weight: 500;
+}
+@media (max-width: 400px) {
+  body .hamburger {
+    transform: scale(0.8);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
