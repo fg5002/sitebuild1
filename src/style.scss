@@ -21,56 +21,59 @@ body {
     color: $primary-font-color;
     background: black;
     padding: 0px 20px;
+    .hamcontainer{
+        display: flex;
+        justify-content: flex-end;
+        background: $primary-bg-color;
+            .hamburger{
+                background: $hamburger-color;
+                border-radius: 50%;
+                height: 80px;
+                width: 80px;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 6px;
+                    div {
+                        width: 42px;
+                        height: 6px;
+                        background:#fff;
+                    }                    
+            }
+        }
         .main{
             background: $primary-bg-color;
             height: 100vh;
             display: flex;
-            justify-content: center;
+            /*justify-content: center;*/
             align-items: center;
             flex-direction: column;
             gap: 30px;
             font-size: 2rem;
-            .hamcontainer{
-                align-self: stretch;
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-end;
-                background-color: lime;
-                .hamburger{
-                    background: $hamburger-color;
-                    border-radius: 50%;
-                    height: 80px;
-                    width: 80px;
-                    /*position: absolute;
-                    top: 20px;
-                    right: 20px;*/
-                    margin-right: 20px;;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    gap: 6px;
-                        div {
-                            width: 42px;
-                            height: 6px;
-                            background:#fff;
-                        }                    
-                }
+
+            @media (max-width: 500px) {
+                /*flex-direction: column; max width 417px 353*/
+                align-items: center;
             }
+
             h1{
                 color: $text-color;
-                font-size: 1.5rem;;
+                font-size: 1.7rem;;
             }
             input{
                 font-size: 16px;
                 padding: 10px 20px;
                 color: $text-color;
                 width: 560px;
-                height: 65px;
-                
+                height: 65px;                
+            }
+            input[type="checkbox"]{
+                width: 25px;
             }
             ::placeholder {
-                color: #4A9E94;
+                color: $btn-color;
                 font-weight: 500;
             }
         }
