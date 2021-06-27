@@ -14,13 +14,18 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body .hamcontainer {
+body .main {
   align-self: stretch;
-  display: flex;
-  justify-content: flex-end;
   background: #FBB03B;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 2rem;
+  padding: 20px;
 }
-body .hamcontainer .hamburger {
+body .main .hamburger {
   background: #138073;
   border-radius: 50%;
   height: 80px;
@@ -32,22 +37,10 @@ body .hamcontainer .hamburger {
   flex-direction: column;
   gap: 6px;
 }
-body .hamcontainer .hamburger div {
+body .main .hamburger div {
   width: 40px;
   height: 6px;
   background: #fff;
-}
-body .main {
-  background: #FBB03B;
-  height: 100vh;
-  min-width: 416px;
-  max-width: 580px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  font-size: 2rem;
-  padding: 20px;
 }
 body .main h1 {
   color: #138073;
@@ -85,7 +78,7 @@ body .main ::placeholder {
   color: #39B69F;
   font-weight: 500;
 }
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
   body .hamburger {
     transform: scale(0.8);
   }
