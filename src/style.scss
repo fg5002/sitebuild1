@@ -34,8 +34,9 @@ body {
         flex-direction: column;
         gap: 30px;
         font-size: 2rem;
-        padding:20px;
+        padding:30px;
         .hamburger{
+            align-self: flex-end;
             background: $hamburger-color;
             border-radius: 50%;
             height: 80px;
@@ -54,10 +55,10 @@ body {
         }
         h1{
             color: $text-color;
-                font-size: 1.7rem;;
+                font-size: 2rem;;
             }
             input{
-                align-self: stretch;
+                width: 50%;
                 font-size: 16px;
                 padding: 10px 20px;
                 color: $text-color;
@@ -89,11 +90,19 @@ body {
                 font-weight: 500;
             }
         }
-        @media (max-width: 1000px) {
-
-            .hamburger{
-                transform: scale(0.8)
+        @media (max-width: 900px) {
+            .main{
+                .hamburger{
+                    transform: scale(0.8)
+                }
+                h1{
+                    align-self: flex-end;
+                }
+                input{
+                    width: 100%;
+                }
             }
+            
 
         }
 }
